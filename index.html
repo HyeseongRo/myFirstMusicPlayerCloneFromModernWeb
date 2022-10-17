@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home-section.css">
+    <link rel="stylesheet" href="music-player.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="playlist-section.css">
+
+</head>
+<body>
+
+    <audio src="" id="audio-source"></audio>
+
+        <!-- home section -->
+
+    <section class="home-section">
+        <!-- carousel -->
+        <div class="carousel">
+            <img src="assets/images/TWICE_THE_STORY_BEGINS.jpeg" class="active" alt="">
+            <img src="assets/images/TWICE_PAGE_TWO.jpeg" alt="">
+            <img src="assets/images/TWICE_TWICEcoaster_LANE_1.jpeg" alt="">
+            <img src="assets/images/TWICE_TWICEcoaster_LANE_2.jpeg" alt="">
+            <img src="assets/images/TWICE_SIGNAL.jpeg" alt="">
+            <img src="assets/images/TWICE_twicetagram.jpeg" alt="">
+            <img src="assets/images/TWICE_Merry_&_Happy.jpeg" alt="">
+            <img src="assets/images/TWICE_What_is_Love.jpeg" alt="">
+            <img src="assets/images/TWICE_Summer_Nights.jpeg" alt="">
+        </div>
+
+        <!-- playlists -->
+        <h1 class="heading">recently played</h1>
+        <div class="playlists-group">
+            <div class="playlists-card">
+                <img src="assets/images/TWICE_twicetagram.jpeg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">top international</p>
+            </div>
+            <div class="playlists-card">
+                <img src="assets/images/TWICE_What_is_Love.jpeg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">my favorite</p>
+            </div>
+            <div class="playlists-card">
+                <img src="assets/images/TWICE_Summer_Nights.jpeg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">summer</p>
+            </div>
+            <div class="playlists-card">
+                <img src="assets/images/TWICE_Merry_&_Happy.jpeg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">christmas</p>
+            </div>
+            <div class="playlists-card">
+                <img src="assets/images/TWICE_PAGE_TWO.jpeg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">best</p>
+            </div>
+            <div class="playlists-card">
+                <img src="assets/images/TWICE_TWICEcoaster_LANE_1.jpeg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">halloween</p>
+            </div>
+            <div class="playlists-card">
+                <img src="assets/images/TWICE_THE_STORY_BEGINS.jpeg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Debut</p>
+            </div>
+        </div>
+        <h1 class="heading">based on your listening</h1>
+        <div class="playlists-group">
+            <div class="playlists-card">
+                <img src="assets/images/TWICE_TWICEcoaster_LANE_2.jpeg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">top international</p>
+            </div>
+            <div class="playlists-card">
+                <img src="assets/images/TWICE_SIGNAL.jpeg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">my favorite</p>
+            </div>
+            <div class="playlists-card">
+                <img src="assets/images/TWICE_Summer_Nights.jpeg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">summer</p>
+            </div>
+            <div class="playlists-card">
+                <img src="assets/images/TWICE_Merry_&_Happy.jpeg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">christmas</p>
+            </div>
+            <div class="playlists-card">
+                <img src="assets/images/TWICE_PAGE_TWO.jpeg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">best</p>
+            </div>
+            <div class="playlists-card">
+                <img src="assets/images/TWICE_TWICEcoaster_LANE_1.jpeg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">halloween</p>
+            </div>
+            <div class="playlists-card">
+                <img src="assets/images/TWICE_THE_STORY_BEGINS.jpeg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Debut</p>
+            </div>  
+        </div>
+    </section>
+    
+    <section class="music-player-section">
+
+        <img src="assets/images/back.png" class="back-btn icon hide" alt="">
+        <img src="assets/images/nav.png" class="nav-btn icon hide" alt="">
+        
+        <h1 class="current-song-name">song 1</h1>
+        <p class="artist-name hide">artist 1</p>
+        
+        <img src="assets/images/TWICE_THE_STORY_BEGINS.jpeg" class="cover hide" alt="">
+
+        <div class="seek-bar-container">
+            <input type="range" class="music-seek-bar" value="0">
+            <p class="current-time hide">00 : 00</p>
+            <p class="duration hide">00 : 00</p>
+        </div>
+
+        <div class="controls">
+            <span class="fas fa-redo"></span>
+            <div class="main">
+                <i class="fas fa-backward active"></i>
+                <i class="fas fa-play active"></i>
+                <i class="fas fa-pause"></i>
+                <i class="fas fa-forward active"></i>
+            </div>
+            <input type="range" class="volume-slider" max="1" value="1" step="0.1">
+            <span class="fas fa-volume-up"></span>
+        </div>
+    </section>
+
+    <section class="playlist">
+
+        <img src="assets/images/back.png" class="back-btn icon" alt="">
+
+        <h1 class="title">playlist</h1>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/TWICE_THE_STORY_BEGINS.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">OHH-AHH하게</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/TWICE_THE_STORY_BEGINS.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">미쳤나봐</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/TWICE_THE_STORY_BEGINS.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Candy Boy</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/TWICE_THE_STORY_BEGINS.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Like a Fool</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/TWICE_PAGE_TWO.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">CHEER UP</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/TWICE_TWICEcoaster_LANE_1.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">TT</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/TWICE_TWICEcoaster_LANE_1.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">1 TO 10</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/TWICE_TWICEcoaster_LANE_1.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">JELLY JELLY</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/TWICE_TWICEcoaster_LANE_1.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">PONYTAIL</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/TWICE_TWICEcoaster_LANE_1.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">PIT-A-PAT</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/TWICE_TWICEcoaster_LANE_1.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">ONE IN A MILLION</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/TWICE_TWICEcoaster_LANE_2.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">KNOCK KNCOK</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/TWICE_TWICEcoaster_LANE_2.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">녹아요</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/TWICE_SIGNAL.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">SOMEONE LIKE ME</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/TWICE_twicetagram.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">거북이</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/TWICE_twicetagram.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">MISSING U</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/TWICE_twicetagram.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">WOW</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/TWICE_Merry_&_Happy.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Heart Shaker</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/TWICE_What_is_Love.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">What is Love?</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/TWICE_What_is_Love.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">STUCK</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/TWICE_Summer_Nights.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Dance The Night Away</p>
+        </div>
+
+    </section>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
